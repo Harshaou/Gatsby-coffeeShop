@@ -18,7 +18,7 @@ class NavBar extends Component {
     navBarHandle = () => { 
         this.state.navBarOpen ? 
         this.setState({css: 'collapse navbar-collapse', navBarOpen: false}) :
-         this.setState({css: 'collapse navbar-collapse show', navBarOpen: true})
+        this.setState({css: 'collapse navbar-collapse show', navBarOpen: true})
         
     }
     render() {

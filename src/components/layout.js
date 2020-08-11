@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import "./bootstrap.min.css"
 import "./layout.css"
 import NavBar from "./global/NavBar"
+import Footer from "./global/Footer"
 
 
 const Layout = ({ children }) => {
@@ -13,6 +14,7 @@ return (
   <div>
     <NavBar />
     {children}
+    <Footer />
   </div>
   )
 }
