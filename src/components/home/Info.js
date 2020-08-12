@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Title from '../global/Title';
 
 
-const Info = () => {
+const Info = ({page, route}) => {
     return (
         <section className='py-5'>
             <div className="container">
@@ -17,8 +17,8 @@ const Info = () => {
                         It inspires us to keep going when times get tough. It gives us a reason to be happy,
                         and continue our journey. 
                         </p>
-                        <Link to='/about'>
-                            <button className='btn btn-warning'>About page</button>
+                        <Link to={route}>
+                            <button className='btn btn-warning'>{page} </button>
                         </Link>
                     </div>
                 </div>
