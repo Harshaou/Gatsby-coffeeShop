@@ -5,6 +5,8 @@ import SEO from "../components/seo"
 import Background from '../components/global/background'
 import Info from '../components/home/Info'
 import Menu from "../components/home/Menu"
+import Products from "../components/home/Products"
+import Contact from "../components/home/Contact"
 
 
 const IndexPage = ({data}) => (
@@ -13,6 +15,8 @@ const IndexPage = ({data}) => (
     <Background img={data.img.childImageSharp.fluid} title='Regular Joe' styleClass='default-background' />
     <Info route='/about' page='About'/>
     <Menu item={data.menu}/>
+    <Products />
+    <Contact />
   </Layout>
 )
 

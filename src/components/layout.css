@@ -59,7 +59,7 @@ h6 {
   background-size: cover;
   background-attachment: fixed;
 }
-.menu {
+.menu, .contact {
   background: var(--mainGrey);
 }
 .contact {

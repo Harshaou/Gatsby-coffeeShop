@@ -5,25 +5,26 @@ import Img from 'gatsby-image'
 
 
 const Menu = ({item}) => {
-    const [items, setItems] = useState(item.edges);
+    const [items] = useState(item.edges);
     const [coffeeItems, setCoffeeItems] = useState(item.edges);
     const [catagories, setCatagories] = useState([])
 
+    
 
     useEffect(() => {
+        const getCatagories = () => {
+            let tempItems = items.map(item => {
+                return item.node.category
+            })
+    
+            let tempCatagories = new Set(tempItems)
+            let ArrCatagories = Array.from(tempCatagories)
+            setCatagories(['all', ...ArrCatagories])
+        }
         getCatagories()
-    }, []);
+    },[items]);
 
-    const getCatagories = () => {
-        let tempItems = coffeeItems.map(item => {
-            return item.node.category
-        })
-
-        let tempCatagories = new Set(tempItems)
-        let ArrCatagories = Array.from(tempCatagories)
-        setCatagories(['all', ...ArrCatagories])
-    }
-
+    
     const handleSorting = (item) => {
         let tempItems = [...items]
         if(item === 'all'){
