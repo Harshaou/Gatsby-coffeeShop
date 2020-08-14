@@ -27,7 +27,6 @@ const Products = () => {
     return (
         <div>
             <StaticQuery query={getProducts} render={({products}) => {
-              console.log(products.edges)
                 return (
                     <section className='py-5'>
                       <div className="container">

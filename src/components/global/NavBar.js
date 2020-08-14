@@ -26,9 +26,6 @@ class NavBar extends Component {
             <nav className="navbar navbar-expand-sm bg-light navbar-light">
                 <Link to="/" className="">
                     <img src={logo} alt='logo' />
-                     {/* https://www.iconfinder.com/icons/185113/coffee_streamline_icon
-                    Creative Commons (Attribution 3.0 Unported);
-                    https://www.iconfinder.com/webalys  */}
                 </Link>
                 <button className='navbar-toggler' type='button' onClick={this.navBarHandle}>
                     <span className='navbar-toggler-icon'/>
@@ -42,7 +39,7 @@ class NavBar extends Component {
                                 </li>
                             )
                         })}
-                        <li className='nav-item ml-sm-5'><FaCartArrowDown className='cart-icon' /></li>
+                        <li className='nav-item ml-sm-5'><FaCartArrowDown className='cart-icon snipcart-checkout' /></li>
                     </ul>
                     
                 </div>
