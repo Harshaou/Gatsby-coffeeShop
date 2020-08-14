@@ -15,8 +15,9 @@ const IndexPage = ({data}) => (
     <Background img={data.img.childImageSharp.fluid} title='Regular Joe' styleClass='default-background' />
     <Info route='/about' page='About'/>
     <Menu item={data.menu}/>
-    <Products />
     <Contact />
+    <Products />
+    
   </Layout>
 )
 
