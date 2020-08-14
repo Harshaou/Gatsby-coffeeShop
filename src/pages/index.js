@@ -26,7 +26,7 @@ export const query = graphql`
     "default-background.jpeg"}) {
     childImageSharp {
       fluid {
-        ...GatsbyImageSharpFluid_tracedSVG
+        ...GatsbyImageSharpFluid
       }
     }
   }
