@@ -10,8 +10,7 @@ class NavBar extends Component {
         css: 'collapse navbar-collapse',
         links: [
             {id: 1, path: '/', text: 'Home'},
-            {id: 2, path: '/about', text: 'About'},
-            {id: 3, path: '/contact', text: 'Contact'}
+            {id: 2, path: '/about', text: 'About'}
         ]
     }
 

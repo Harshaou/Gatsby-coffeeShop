@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby'
 import Tittle from '../global/Title';
-import Product from './product';
+import Product from './Product';
 
 const Products = () => {
 
@@ -16,7 +16,7 @@ const Products = () => {
               image{
                  fluid(maxHeight: 426){
                   src
-                  ...GatsbyContentfulFluid_tracedSVG
+                  ...GatsbyContentfulFluid
                 }
               }
             }

@@ -14,7 +14,7 @@ const Product = ({product}) => {
                     data-item-name={product.title}
                     data-item-price={product.price}
                     data-item-image={product.image.fluid.src}
-                    data-item-url="https://gracious-mirzakhani-2d2007.netlify.app" >
+                    data-item-url="https://modest-jennings-4715e4.netlify.app" >
                         Add to Cart
                     </button>
                 </div>
